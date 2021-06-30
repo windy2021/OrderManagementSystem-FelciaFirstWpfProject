@@ -1,0 +1,70 @@
+﻿<Page x:Class="UI.AddOrderItemView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddOrderItemView">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition MaxHeight="70"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.Resources>
+            <DataTemplate x:Key="ItemTemplate">
+                <Button Click="Button_Click">Add Item</Button>
+            </DataTemplate>
+        </Grid.Resources>
+        <Label Grid.Row="0" 
+               Grid.Column="0" 
+               Content="Quantity:" 
+               Style="{StaticResource FormLabel}" 
+               Margin="150,0,0,0" 
+               HorizontalAlignment="Left" 
+               Height="30" 
+               Width="69"/>
+        <TextBox Grid.Row="0" 
+                 Grid.Column="1" 
+                 x:Name="quantity"
+                 Text="0" 
+                 Style="{StaticResource FormTextbox}" />
+        <DataGrid Grid.Row="1" 
+                Grid.Column="0" 
+                Grid.ColumnSpan="3"
+                x:Name="StockItems" 
+                ItemsSource="{Binding StockItems}" 
+                IsReadOnly="True" 
+                AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn 
+                    Header="SKU"
+                    Binding="{Binding Id}" 
+                    Width="1*"/>
+                <DataGridTextColumn 
+                    Header="Item" 
+                    Binding="{Binding Name}"  
+                    Width="2*"/>
+                <DataGridTextColumn 
+                    Header="Price" 
+                    Binding="{Binding Price}"  
+                    Width="2*"/>
+                <DataGridTextColumn 
+                    Header="InStock" 
+                    Binding="{Binding InStock}"  
+                    Width="2*"/>
+                <DataGridTemplateColumn 
+                    Width="100" 
+                    CellTemplate="{StaticResource ItemTemplate}" 
+                    />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UI</name>
+    </assembly>
+    <members>
+        <member name="T:UI.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:UI.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:UI.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:UI.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:UI.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:UI.AddOrderItemView">
+            <summary>
+            Interaction logic for AddOrderItemView.xaml
+            </summary>
+            <summary>
+            AddOrderItemView
+            </summary>
+        </member>
+        <member name="M:UI.AddOrderItemView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:UI.AddOrderView">
+            <summary>
+            Interaction logic for AddOrderView.xaml
+            </summary>
+            <summary>
+            AddOrderView
+            </summary>
+        </member>
+        <member name="M:UI.AddOrderView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:UI.OrderDetailsView">
+            <summary>
+            Interaction logic for OrderDetailsView.xaml
+            </summary>
+            <summary>
+            OrderDetailsView
+            </summary>
+        </member>
+        <member name="M:UI.OrderDetailsView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:UI.OrdersView">
+            <summary>
+            Interaction logic for OrdersView.xaml
+            </summary>
+            <summary>
+            OrdersView
+            </summary>
+        </member>
+        <member name="M:UI.OrdersView.#ctor">
+            <summary>
+            OrdersView Page
+            </summary>
+        </member>
+        <member name="M:UI.OrdersView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Domain</name>
+    </assembly>
+    <members>
+        <member name="M:Domain.OrderHeader.#ctor(System.Int32,System.DateTime)">
+            <summary>
+            OrderHeader
+            </summary>
+            <param name="id"></param>
+            <param name="dateTime"></param>
+        </member>
+        <member name="M:Domain.OrderHeader.#ctor(System.Int32,System.DateTime,System.Int32)">
+            <summary>
+            OrderHeader
+            </summary>
+            <param name="id"></param>
+            <param name="dateTime"></param>
+            <param name="stateId"></param>
+        </member>
+        <member name="P:Domain.OrderHeader.TotalOrder">
+            <summary>
+            Property to count total of an OrderHeader
+            </summary>
+        </member>
+        <member name="M:Domain.OrderHeader.AddOrderItem(System.Int32,System.Decimal,System.String,System.Int32)">
+            <summary>
+            Method to AddOrderItem inside OrderHeader
+            </summary>
+            <param name="stockItemId"></param>
+            <param name="price"></param>
+            <param name="description"></param>
+            <param name="quantity"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Domain.OrderHeader.OrderItems">
+            <summary>
+            Property to get OrderItems
+            </summary>
+        </member>
+        <member name="M:Domain.OrderHeader.Complete">
+            <summary>
+            Method to set OrderState of an OrderHeader as Complete
+            </summary>
+        </member>
+        <member name="M:Domain.OrderHeader.Reject">
+            <summary>
+            Method to set OrderState of an OrderHeader as Rejected
+            </summary>
+        </member>
+        <member name="M:Domain.OrderHeader.setState(System.Int32)">
+            <summary>
+            Method to set the OrderState of an OrderHeader
+            </summary>
+            <param name="stateId"></param>
+        </member>
+        <member name="M:Domain.OrderHeader.Submit">
+            <summary>
+            Method to submit an OrderHeader
+            </summary>
+        </member>
+        <member name="M:Domain.OrderItem.#ctor(Domain.OrderHeader,System.Int32,System.String,System.Decimal,System.Int32)">
+            <summary>
+            Cosntructor of an OrderItem
+            </summary>
+            <param name="orderHeader"></param>
+            <param name="id"></param>
+            <param name="description"></param>
+            <param name="price"></param>
+            <param name="quantity"></param>
+        </member>
+        <member name="T:Domain.StockItem">
+            <summary>
+            StockItem class
+            </summary>
+        </member>
+        <member name="M:Domain.StockItem.#ctor(System.Int32,System.String,System.Decimal,System.Int32)">
+            <summary>
+            Constructor of a StockItem
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="price"></param>
+            <param name="inStock"></param>
+        </member>
+    </members>
+</doc>
