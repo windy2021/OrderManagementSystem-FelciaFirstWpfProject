@@ -15,10 +15,10 @@
                Grid.Row="1" 
                Grid.ColumnSpan="2" 
                NavigationUIVisibility="Hidden" 
-               BorderBrush="BlueViolet" 
+               BorderBrush="DeepSkyBlue" 
                Margin="10" 
                Padding="10" 
-               BorderThickness="2"
+               BorderThickness="3"
                />
         
     </Grid>
